@@ -67,4 +67,12 @@ public class Quest {
                 "2",
                 "Старик не победил море, но и море не победило старика. Истинное поражение — это сдаться."));
     }
+
+    public String congratulation(String name) {
+        return String.format("%s, поздравляем с победой!", name);
+    }
+
+    public String defeat(String name) {
+        return String.format("%s, ты проиграл...", name);
+    }
 }

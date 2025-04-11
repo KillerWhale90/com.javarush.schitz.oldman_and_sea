@@ -66,7 +66,7 @@
 </head>
 <body>
 <div class="win-container">
-    <h1>${sessionScope.username}, поздравляем с победой!</h1>
+    <h1>${requestScope.win}</h1>
     <h2>Ты прошёл через боль, одиночество, поражение и возвращение.
         Эта история — не про рыбу. Она про дух. И ты его не потерял.</h2>
     <form action="index.jsp">

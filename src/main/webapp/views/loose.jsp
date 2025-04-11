@@ -79,7 +79,7 @@
 <body>
 
 <div class="lose-container">
-    <h1>${sessionScope.username}, ты проиграл...</h1>
+    <h1>${requestScope.loose}</h1>
     <h2>${requestScope.wrongAnswer}</h2>
     <form action="index.jsp">
         <button type="submit">Сыграть ещё раз</button>

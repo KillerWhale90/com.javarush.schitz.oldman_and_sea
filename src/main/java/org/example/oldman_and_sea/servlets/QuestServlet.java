@@ -34,10 +34,14 @@ public class QuestServlet extends HttpServlet {
                 RequestDispatcher dispatcher = req.getRequestDispatcher("views/quest.jsp");
                 dispatcher.forward(req, resp);
             } else {
+                req.setAttribute("win", quest.congratulation((String) req.getSession().getAttribute("username")));
+
                 RequestDispatcher dispatcher = req.getRequestDispatcher("views/win.jsp");
                 dispatcher.forward(req, resp);
             }
         } else {
+            req.setAttribute("loose", quest.defeat((String) req.getSession().getAttribute("username")));
+
             req.setAttribute("wrongAnswer", quest.getSteps().get(step).getWrongAnswer());
 
             RequestDispatcher dispatcher = req.getRequestDispatcher("views/loose.jsp");
