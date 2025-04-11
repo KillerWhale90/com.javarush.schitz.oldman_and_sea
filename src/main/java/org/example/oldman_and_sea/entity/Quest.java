@@ -7,10 +7,10 @@ import java.util.List;
 
 @Getter
 public class Quest {
-    private List<Step> steps;
+    private final List<Step> steps;
 
     public Quest() {
-        steps = new ArrayList<Step>();
+        steps = new ArrayList<>();
 
         steps.add(new Step("Сцена 1: Утро в хижине",
                 "Ты — Сантьяго, старый рыбак, который уже 84 дня не поймал ни одной рыбы. " +
