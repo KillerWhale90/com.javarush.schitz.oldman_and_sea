@@ -9,7 +9,7 @@ public class QuestTest {
     private Quest quest;
 
     @BeforeEach
-    public void setUp() throws Exception {
+    public void setUp() {
         quest = new Quest();
     }
 
